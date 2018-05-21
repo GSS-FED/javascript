@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['eslint-config-airbnb-base'].map(require.resolve),
+  extends: ['@gssfed/base'].map(require.resolve),
   rules: {},
 };

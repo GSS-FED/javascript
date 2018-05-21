@@ -1,14 +1,14 @@
 {
-  "name": "eslint-config-airbnb",
-  "version": "16.1.0",
-  "description": "Airbnb's ESLint config, following our styleguide",
+  "name": "@gssfed/eslint-config",
+  "version": "0.0.1",
+  "description": "GssFed's ESLint config, fork from airbnb",
   "main": "index.js",
   "scripts": {
     "prelint": "editorconfig-tools check * rules/* test/*",
     "lint": "eslint .",
     "pretests-only": "node ./test/requires",
     "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
+    "prepublish": "(in-install) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
     "test": "npm run --silent tests-only",
     "pretravis": "cd ../eslint-config-airbnb-base && npm install && npm link && cd - && npm link --no-save eslint-config-airbnb-base",
@@ -49,7 +49,7 @@
   },
   "homepage": "https://github.com/airbnb/javascript",
   "dependencies": {
-    "eslint-config-airbnb-base": "^12.1.0",
+    "@gssfed/eslint-config-base": "^0.0.1",
     "object.assign": "^4.1.0",
     "object.entries": "^1.0.4"
   },
