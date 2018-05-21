@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "pretests-only": "node ./test/requires",
     "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublish": "(in-install) && (not-in-publish || npm test) && safe-publish-latest",
+    "prepublish": "(not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
     "test": "npm run --silent tests-only",
     "pretravis": "cd ../eslint-config-airbnb-base && npm install && npm link && cd - && npm link --no-save eslint-config-airbnb-base",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/airbnb/javascript"
+    "url": "https://github.com/GSS-FED/javascript"
   },
   "keywords": [
     "eslint",

@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['@gssfed/base'].map(require.resolve),
+  extends: ['@gssfed/eslint-config-base'].map(require.resolve),
   rules: {},
 };
