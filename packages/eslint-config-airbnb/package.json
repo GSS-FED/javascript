@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "GssFed's ESLint config, fork from airbnb",
   "main": "index.js",
   "scripts": {
