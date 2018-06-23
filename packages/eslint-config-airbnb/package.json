@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/eslint-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "GssFed's ESLint config, fork from airbnb",
   "main": "index.js",
   "scripts": {
@@ -53,7 +53,7 @@
   },
   "homepage": "https://github.com/airbnb/javascript",
   "dependencies": {
-    "@gssfed/eslint-config-base": "^0.0.2",
+    "@gssfed/eslint-config-base": "^0.0.3",
     "object.assign": "^4.1.0",
     "object.entries": "^1.0.4"
   },
