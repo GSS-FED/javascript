@@ -23,13 +23,17 @@ module.exports = {
         'getDefaultProps',
         'getChildContext',
         'componentWillMount',
+        'UNSAFE_componentWillMount',
         'componentDidMount',
         'componentWillReceiveProps',
+        'UNSAFE_componentWillReceiveProps',
         'shouldComponentUpdate',
         'componentWillUpdate',
+        'UNSAFE_componentWillUpdate',
         'componentDidUpdate',
         'componentWillUnmount',
         'componentDidCatch',
+        'getSnapshotBeforeUpdate'
       ],
     }],
 
@@ -371,8 +375,9 @@ module.exports = {
 
     // Forbids using non-exported propTypes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
-    // TODO: enable?
-    'react/forbid-foreign-prop-types': ['off', { allowInPropTypes: true }],
+    // this is intentionally set to "warn". it would be "error",
+    // but it's only critical if you're stripping propTypes in production.
+    'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
 
     // Prevent void DOM elements from receiving children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
